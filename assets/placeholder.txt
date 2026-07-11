@@ -1,0 +1,23 @@
+Instrucciones para los Assets
+==============================
+
+Por favor, agrega los siguientes archivos en esta carpeta:
+
+1. logo.png
+   - Tamaño recomendado: 300x300 píxeles
+   - Formato: PNG con fondo transparente
+   - Debe ser el logo oficial de ICFA RED
+
+2. favicon.png
+   - Tamaño recomendado: 64x64 píxeles (o 32x32)
+   - Formato: PNG
+   - Versión simplificada del logo para el navegador
+
+Mientras tanto, puedes:
+- Usar un logo temporal
+- O crear un SVG simple en línea
+- O reemplazar la referencia en index.html por una imagen de placeholder
+
+Nota: Para generar un favicon desde PNG, puedes usar herramientas como:
+- https://favicon.io/
+- https://realfavicongenerator.net/
