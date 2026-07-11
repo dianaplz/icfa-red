@@ -262,7 +262,11 @@ a {
   background-color: transparent;
 }
 
-/* Ícono Font Awesome (fallback) */
+/* Instagram tiene más margen interno en su logo original —
+   reducimos el padding para que se perciba igual de grande */
+.card__icon-img[alt="Instagram"] {
+  padding: 3px;
+}
 .card__icon--fa {
   width:           100%;
   height:          100%;
