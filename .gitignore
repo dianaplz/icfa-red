@@ -1,0 +1,15 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/settings.json
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Assets temporales / de trabajo
+assets/placeholder.txt

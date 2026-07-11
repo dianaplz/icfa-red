@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO básico (app.js completa los valores vacíos desde config.js) -->
+  <title>ICFA RED — Familia de Amor</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+
+  <!-- Theme color — barra del navegador en móvil -->
+  <meta name="theme-color" content="#162C54">
+
+  <!-- Open Graph — previsualización en WhatsApp y Facebook -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="">
+  <meta property="og:description" content="">
+  <meta property="og:url"         content="">
+  <meta property="og:image"       content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="">
+  <meta name="twitter:description" content="">
+
+  <!-- Favicon desde carpeta img/ -->
+  <link rel="icon"             type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180"                href="img/logo.png">
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Preload recursos críticos -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="js/config.js"   as="script">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome 6 — iconos de redes sociales -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plh7eqjn8lgaWl1Jo+zcpTnb6odE6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <div class="container">
+
+      <!-- ── HEADER ─────────────────────────────────────────────── -->
+      <header class="header">
+
+        <div class="logo-wrap">
+          <img
+            id="logo"
+            src=""
+            alt="Logo ICFA RED"
+            class="logo"
+            loading="lazy"
+          >
+          <!-- Se muestra solo si la imagen no carga -->
+          <div id="logo-fallback" class="logo-fallback" aria-hidden="true">RED</div>
+        </div>
+
+        <h1 id="site-title" class="site-title">ICFA RED</h1>
+        <p  id="site-description" class="site-description"></p>
+
+      </header>
+
+      <!-- ── TARJETAS ───────────────────────────────────────────── -->
+      <main>
+        <div id="cards-container" class="cards" role="list">
+          <!-- Generadas dinámicamente por render.js desde config.js -->
+        </div>
+      </main>
+
+      <!-- ── FOOTER ─────────────────────────────────────────────── -->
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> ICFA RED</p>
+        <p class="footer__brand">Familia de Amor RED</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Scripts en orden: config → render → app -->
+  <script src="js/config.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Año dinámico en el footer -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
