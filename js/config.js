@@ -12,7 +12,7 @@ const CONFIG = {
   nombre: "Bienvenido a ICFA RED",
   descripcion:
     "Conéctate con nosotros y descubre todo lo que Dios está haciendo en Familia de Amor RED. Encuentra nuestras redes sociales, enseñanzas y contenido para crecer juntos en la fe.",
-  logo: "img/LOGO RED.png",
+  logo: "img/LOGO_RED_AZUL.png",
 
   // ── Metadatos SEO / Open Graph ──────────────────────────────────────────────
   meta: {
