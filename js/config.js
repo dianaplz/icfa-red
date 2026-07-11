@@ -37,7 +37,7 @@ const CONFIG = {
       nombre:  "Instagram",
       usuario: "Iglesia RED",
       icono:   "fa-brands fa-instagram",
-      imagen:  "img/Instagram_Logo.png",
+      imagen:  "img/Instagram_Logo_.png",
       url:     "https://www.instagram.com/icfa_red"
     },
     {
